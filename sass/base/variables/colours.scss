@@ -1,0 +1,33 @@
+// Base
+$black: #000000;
+$white: #FFFFFF;
+$opaqueWhite: rgba(255,255,255,0.75);
+$darkGrey: #555555;
+$grey: #ACACAC;
+$lightGrey: #F0F0F0;
+$highlight: #EE6F0C;
+$opaqueBlack: rgba(0,0,0,0.6);
+
+// Typography
+$fontColour: $darkGrey;
+$linkColour: $highlight;
+$linkHover: $black;
+
+// Buttons
+  // Primary
+$buttonBorderColour: $highlight;
+$buttonFontColour: $highlight;
+$buttonBackgroundColour: transparent;
+    // Hovers
+$buttonHoverBorderColour: $highlight;
+$buttonHoverFontColour: $white;
+$buttonHoverBackgroundColour: $highlight;
+
+  // Secondary
+$buttonSecondaryBorderColour: $white;
+$buttonSecondaryBackgroundColour: $white;
+
+// Form
+$formInputBackgroundColour: $lightGrey;
+$formInputPlaceholderColour: $grey;
+$formInputFontColour: $darkGrey;

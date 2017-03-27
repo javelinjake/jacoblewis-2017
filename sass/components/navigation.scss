@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Header classes
+   ========================================================================== */
+header {
+  background-color: #f36639;
+  text-align: center;
+  height: 60px;
+}
+header ul {
+  display: flex;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+.logo a {
+  height: 30px;
+  padding: 15px 15px;
+}
+.logo a img {
+  max-width: none;
+  width: auto;
+  height: 100%;
+  display: block;
+}
+header a {
+  color: #ffffff;
+  background-color: #f36639;
+  display: block;
+  padding: 0 25px;
+  line-height: 60px;
+}
+header a:hover {
+  background-color: #eb440e;
+  color: #fff;
+}
+
+/* Mobile nav toggle */
+.nav-button {
+  display: none;
+}
+@media (max-width: 35em) {
+  .nav-button {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+  }
+  .mobile-nav-active .nav-items {
+    display: block;
+  }
+}

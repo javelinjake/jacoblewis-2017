@@ -1,0 +1,37 @@
+html {
+  font-size: 62.5%; // Makes REMs easier to read
+}
+
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontNormal;
+  color: $fontColour;
+  text-align: center;
+}
+
+// Links
+a {
+ text-decoration: none;
+ color: $linkColour;
+ font-weight: $fontBold;
+}
+a:hover {
+ color: $linkHover;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $fontExtraBold;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: $h1Size;
+}
+h2 {
+  font-size: $h2Size;
+}
+h3 {
+  font-size: $h3Size;
+  font-weight: $fontBold;
+}
