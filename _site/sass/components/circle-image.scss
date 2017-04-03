@@ -1,0 +1,11 @@
+.circle-image {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.circle-image__portfolio {
+  height: 8.5rem;
+  width: 8.5rem;
+  border: 0.5rem solid $white;
+  margin: -5.25rem auto 0 auto;
+  position: relative;
+}

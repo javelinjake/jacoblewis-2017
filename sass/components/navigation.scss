@@ -1,52 +1,91 @@
-/* ==========================================================================
-   Header classes
-   ========================================================================== */
+// /* ==========================================================================
+//    Header classes
+//    ========================================================================== */
 header {
-  background-color: #f36639;
-  text-align: center;
-  height: 60px;
-}
-header ul {
-  display: flex;
-}
-nav {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0;
+  z-index: 2;
+  ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    li:not(.logo) {
+      //display: none;
+    }
+    li.logo {
+      display: none;
+    }
+    li a {
+      color: $white;
+      display: block;
+      font-size: $nav-size;
+      color: $opaque-white;
+      text-transform: uppercase;
+      &:hover {
+        color: $white;
+      }
+    }
+    li:first-child {
+      margin-left: 1.5rem;
+    }
+    li:last-child {
+      margin-right: 1.5rem;
+    }
+  }
 }
 .logo a {
-  height: 30px;
-  padding: 15px 15px;
-}
-.logo a img {
-  max-width: none;
-  width: auto;
-  height: 100%;
   display: block;
+  width: 3.5rem;
 }
-header a {
-  color: #ffffff;
-  background-color: #f36639;
-  display: block;
-  padding: 0 25px;
-  line-height: 60px;
-}
-header a:hover {
-  background-color: #eb440e;
-  color: #fff;
-}
-
-/* Mobile nav toggle */
-.nav-button {
-  display: none;
-}
-@media (max-width: 35em) {
-  .nav-button {
-    display: block;
-  }
-  .nav-items {
-    display: none;
-  }
-  .mobile-nav-active .nav-items {
-    display: block;
-  }
-}
+// header {
+//   background-color: #f36639;
+//   text-align: center;
+//   height: 60px;
+// }
+// header ul {
+//   display: flex;
+// }
+// nav {
+//   display: flex;
+//   justify-content: center;
+// }
+// .logo a {
+//   height: 30px;
+//   padding: 15px 15px;
+// }
+// .logo a img {
+//   max-width: none;
+//   width: auto;
+//   height: 100%;
+//   display: block;
+// }
+// header a {
+//   color: #ffffff;
+//   background-color: #f36639;
+//   display: block;
+//   padding: 0 25px;
+//   line-height: 60px;
+// }
+// header a:hover {
+//   background-color: #eb440e;
+//   color: #fff;
+// }
+//
+// /* Mobile nav toggle */
+// .nav-button {
+//   display: none;
+// }
+// @media (max-width: 35em) {
+//   .nav-button {
+//     display: block;
+//   }
+//   .nav-items {
+//     display: none;
+//   }
+//   .mobile-nav-active .nav-items {
+//     display: block;
+//   }
+// }

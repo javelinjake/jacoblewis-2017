@@ -1,13 +1,20 @@
 // Font font family
-$fontFamily: 'Exo 2', sans-serif;
+$font-family: 'Exo 2', sans-serif;
 
 // Font sizes
-$fontSize: 1.6rem;
-$h1Size: 4rem;
-$h2Size: 2.5rem;
-$h3Size: 2rem;
+  // Mobile
+$font-size: 1.6rem;
+$h1-size: 2.5rem;
+$h2-size: 2rem;
+$h3-size: 1.8rem;
+$nav-size: 1.2rem;
+  // Desktop
+$font-size-desktop: 1.6rem;
+$h1-size-desktop: 4rem;
+$h2-size-desktop: 2.5rem;
+$h3-size-desktop: 2rem;
 
 // Font weights
-$fontNormal: 300;
-$fontBold: 500;
-$fontExtraBold: 700;
+$font-normal: 300;
+$font-bold: 500;
+$font-extra-bold: 700;

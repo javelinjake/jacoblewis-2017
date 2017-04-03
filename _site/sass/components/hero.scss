@@ -1,0 +1,28 @@
+.hero {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+  }
+}
+.hero__content {
+  position: relative;
+  padding: 10rem 0;
+  color: $white;
+  h1 {
+    margin-bottom: 0;
+    .slogan {
+      font-size: $font-size;
+      font-weight: $font-normal;
+      text-transform: lowercase;
+    }
+  }
+}

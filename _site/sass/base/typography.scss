@@ -3,35 +3,50 @@ html {
 }
 
 body {
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  font-weight: $fontNormal;
-  color: $fontColour;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-normal;
+  color: $font-colour;
   text-align: center;
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 // Links
 a {
  text-decoration: none;
- color: $linkColour;
- font-weight: $fontBold;
+ color: $link-colour;
+ font-weight: $font-bold;
 }
 a:hover {
- color: $linkHover;
+ color: $link-hover;
 }
 
 // Headings
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $fontExtraBold;
+  font-weight: $font-extra-bold;
   text-transform: uppercase;
+  margin-top: 3rem;
 }
 h1 {
-  font-size: $h1Size;
+  font-size: $h1-size;
+  margin-top: 0;
 }
 h2 {
-  font-size: $h2Size;
+  font-size: $h2-size;
+  margin-bottom: 1rem;
+  &:after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 5rem;
+    background-color: $highlight;
+    margin: 0.5rem auto 0 auto;
+  }
 }
 h3 {
-  font-size: $h3Size;
-  font-weight: $fontBold;
+  font-size: $h3-size;
+  font-weight: $font-bold;
 }
